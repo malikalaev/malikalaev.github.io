@@ -77,9 +77,10 @@ nav{
     line-height: 60px;
     padding-left: 300px;
     float: left;
-    -webkit-animation: comming 2s ease;
-    -o-animation: comming 2s ease;
-    animation: comming 2s ease;
+    opacity: 0;
+    -webkit-animation: comming 2s ease forwards;
+    -o-animation: comming 2s ease forwards;
+    animation: comming 2s ease forwards;
     -webkit-animation-delay: 4.4s;
     -o-animation-delay: 4.4s;
     animation-delay: 4.4s;
