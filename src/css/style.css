@@ -69,7 +69,8 @@ nav{
     width: 100%;
     height: 60px;
     background: #344051; 
-    position: fixed;  
+    position: fixed;
+    z-index: 2; 
 }
 .logo{
     color: #fff;
@@ -150,9 +151,9 @@ nav{
     -webkit-animation: titelmove 1s ease forwards;
     -o-animation: titelmove 1s ease forwards;
     animation: titelmove 1s ease forwards;
-    -webkit-animation-delay: 6.4s;
-    -o-animation-delay: 6.4s;
-    animation-delay: 6.4s;
+    -webkit-animation-delay: 7.4s;
+    -o-animation-delay: 7.4s;
+    animation-delay: 7.4s;
     
 }
 @keyframes titelmove{
@@ -215,9 +216,14 @@ nav{
     color: #263244;
     font-size: 22px;
     font-weight: bold;
-    padding-bottom: 15px;
-    border-bottom: 4px solid #d17700;
-     border-radius: 5%;
+}
+.aboutme h2::after{
+    content: '';
+    display: block;
+    background: #d17700;
+    width: 70px;
+    height: 4px;
+    margin: 15px 20px;
 }
 .MyPhoto{
     margin: 40px 0px 20px 46%;
@@ -241,10 +247,18 @@ nav{
     margin: 0px 0px 40px 48%;
     background: url(../img/input.png) 2% 50% no-repeat;
 }
+.summary input:hover{
+    background: #344051;
+    color: #fff;
+}
+.summary input:active{
+    transform: scale(1.1);
+}
 .ican{
-    background: url(../img/bg2.jpg) no-repeat;
+    background: url(../img/bg2.jpg) no-repeat fixed;
     width: 100%;
     height: 70%;
+    background-size: cover;
 }
 .ican h2{
     margin: 30px 42.5% 0 48%;
@@ -252,8 +266,15 @@ nav{
     font-size: 22px;
     font-weight: bold;
     padding: 40px 0 15px;
-    border-bottom: 4px solid #d17700;
-    border-radius: 5%;
+}
+.ican h2::after{
+    content: '';
+    display: block;
+    background: #d17700;
+    width: 70px;
+    height: 4px;
+    margin: 15px 40px;
+    
 }
 .ican h4{
     color: #cf7600;
@@ -281,8 +302,14 @@ nav{
     font-size: 22px;
     font-weight: bold;
     padding: 40px 0 15px;
-    border-bottom: 4px solid #d17700;
-    border-radius: 5%;
+}
+.cases h2::after{
+    content: '';
+    display: block;
+    background: #d17700;
+    width: 70px;
+    height: 4px;
+    margin: 15px 5px;
 }
 .text_cases{
     text-align: center;
@@ -316,6 +343,10 @@ nav{
     font-size: 16px;
     padding: 0px 16px;
     margin-top: 20px;
+}
+.button2:active{
+    transform: scale(1.1);
+    background: #82f1e8;
 }
 .calculator_h2{
     margin: 0 0 20px 47.4% ;
@@ -360,9 +391,11 @@ nav{
     letter-spacing: 1.2px;
 }
 .statistics{
-    background: url(../img/bg3.jpg) no-repeat;
+    background: url(../img/bg3.jpg) no-repeat fixed;
+    background-size: cover;
     width: 100%;
-    height: 600px;
+    height: 500px;
+    margin-bottom: 100px;
 }
 .statistics h2{
     margin: 40px 38.5% 0 44%;
@@ -370,8 +403,14 @@ nav{
     font-size: 22px;
     font-weight: bold;
     padding: 40px 0 15px;
-    border-bottom: 4px solid #d17700;
-    border-radius: 5%;
+}
+.statistics h2::after{
+    content: '';
+    display: block;
+    background: #d17700;
+    width: 70px;
+    height: 4px;
+    margin: 15px 97px;
 }
 .log{
     height: 150px;
@@ -402,14 +441,21 @@ nav{
     height: 500px;
     width: 100%;
 }
+
 .review h2{
     margin: 0 43.5% 54px 49.5%;
     color: #263244;
     font-size: 22px;
     font-weight: bold;
     padding-bottom: 15px;
-    border-bottom: 4px solid #d17700;
-    border-radius: 5%;
+}
+.review h2::after{
+    content: '';
+    display: block;
+    background: #d17700;
+    width: 70px;
+    height: 4px;
+    margin: 15px 20px;
 }
 .mihail{
     text-align: center;
@@ -451,11 +497,10 @@ nav{
     border: 2px solid white;
 }
 .MyContacts{
-    background: url(../img/bg4.jpg);
+    background: url(../img/bg4.jpg) no-repeat -150px;
     color: #fff;
     width: 100%;
     height: 800px;
-    
 }
 .MyContacts h2{
     margin: 0 41% 54px 47%;
@@ -463,8 +508,14 @@ nav{
     font-size: 22px;
     font-weight: bold;
     padding:90px 0 15px;
-    border-bottom: 4px solid #d17700;
-    border-radius: 5%;
+}
+.MyContacts h2::after{
+    content: '';
+    display: block;
+    background: #d17700;
+    width: 70px;
+    height: 4px;
+    margin: 15px 60px;
 }
 .contact_text{
     text-align: center;
@@ -493,6 +544,10 @@ nav{
     color: #676769;
     margin-left: 31%;
 }
+.focus:focus{
+    box-shadow: 0 0 20px orange;
+    border: 2px solid orange; 
+}
 .name{
     background: #d2d6dc;
     width: 310px;
@@ -518,8 +573,23 @@ nav{
     padding:10px 10px 5px;
     margin-left: 289px;
 }
+.button:active{
+    transform: scale(1.1);
+}
 .map{
     overflow: hidden;
+    background: url(../img/map.png) ;
+    width: 100%;
+    height: 350px;
+    color: #000;
+}
+.map span{
+    border: #fff 3px solid;
+    padding: 10px 15px;
+    margin: 225px 46.5%;
+    background: #fff;
+    display: block;
+    font-weight: bold;
 }
 footer{
     background-color: #354051;
