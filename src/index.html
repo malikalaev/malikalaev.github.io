@@ -7,37 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malik Alaev</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="preloader">
         <div class="preloader__row">
-          <div class="preloader__item"></div>
-          <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
         </div>
-    </div>   
+    </div>
     <header>
         <nav>
-            <div class="logo">Андрей Браун</div>
-            <div class="menu">
-                <ul class="list">
-                    <li><a href="#">ОБО МНЕ</a></li>
-                    <li><a href="#">УСЛУГИ</a></li>
-                    <li><a href="#">КЕЙСЫ</a></li>
-                    <li><a href="#">ПРАЙС</a></li>
-                    <li><a href="#">ОТЗЫВЫ</a></li>
-                    <li><a href="#">КОНТАКТЫ</a></li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-lg-3 col-7">
+                        <div class="logo">Андрей Браун</div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                        <div class="menu">
+                            <ul class="list">
+                                <li><a href="#">ОБО МНЕ</a></li>
+                                <li><a href="#">УСЛУГИ</a></li>
+                                <li><a href="#">КЕЙСЫ</a></li>
+                                <li><a href="#">ПРАЙС</a></li>
+                                <li><a href="#">ОТЗЫВЫ</a></li>
+                                <li><a href="#">КОНТАКТЫ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 d-lg-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn  btn-outline-secondary dropdown-toggle white-btn" href="#" role="button"
+                                id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Навигация
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">ОБО МНЕ</a></li>
+                                <li><a class="dropdown-item" href="#">УСЛУГИ</a></li>
+                                <li><a class="dropdown-item" href="#">КЕЙСЫ</a></li>
+                                <li><a class="dropdown-item" href="#">ПРАЙС</a></li>
+                                <li><a class="dropdown-item" href="#">ОТЗЫВЫ</a></li>
+                                <li><a class="dropdown-item" href="#">КОНТАКТЫ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
     <section class="main">
-        <div class="title_container">
-            <h1>Привет<br>Я Андрей Браун</h1>
-            <h4>Фулл стек веб-разработчик </h4>
-            <input type="button" value="Обо мне">
-            <input type="button" value="Мои работы">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-lg-6 mt-5 pt-5">
+                    <div class="title_container mt-5">
+                        <h1>Привет<br>Я Андрей Браун</h1>
+                        <h4>Фулл стек веб-разработчик </h4>
+                        <input type="button" value="Обо мне">
+                        <input type="button" value="Мои работы">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="aboutme">
@@ -201,6 +232,7 @@
     <footer>
         <h5>Copyright © 2021 Андрей Браун. Design by Web</h5>
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <!-- <script>
         window.onload = function () {
           document.body.classList.add('loaded_hiding');
@@ -210,11 +242,11 @@
           }, 500);
         }
       </script> -->
-      <script>
+    <script>
         window.onload = function () {
-          document.body.classList.add('loaded');
+            document.body.classList.add('loaded');
         }
-      </script>
+    </script>
 </body>
 
 </html>
