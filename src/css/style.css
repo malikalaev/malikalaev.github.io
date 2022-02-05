@@ -1,5 +1,12 @@
+@font-face {
+	font-family: 'Franklin Gothic Medium';
+	src: url('../fonts/framd[1].eot');
+	src: local('☺'), url('../fonts/framd[1].woff') format('woff'), url('../fonts/framd[1].ttf') format('truetype'), url('../fonts/framd[1].svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .preloader {
     position: fixed;
@@ -169,9 +176,7 @@ nav{
 }
 
 .title_container h1{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 72px;
-    font-weight: 600;
 }
 .title_container h4{
     margin-top: 40px;
@@ -240,29 +245,30 @@ nav{
     }
 }
 .aboutme h2{
-    margin: 30px 44% 0 49%;
+    /* margin: 30px 44% 0 49%;  */
     color: #263244;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
+     
 }
 .aboutme h2::after{
     content: '';
-    display: block;
+    display: flex;
     background: #d17700;
     width: 70px;
     height: 4px;
-    margin: 15px 20px;
 }
+
 .MyPhoto{
-    margin: 40px 0px 20px 46%;
+    /* margin: 40px 0px 20px 46%; */
 }
 .text_aboutme{
-    margin-left: 35%;
+    /* margin-left: 35%; */
     text-align: left;
 }
-.text_aboutme p{
-    margin-bottom: 20px;
-}
+/* .text_aboutme p{
+    margin-bottom: 20px; 
+}*/
 .summary input{
     height: 30px;
     text-align: center;
@@ -272,7 +278,7 @@ nav{
     color: #6d7682;
     font-size: 16px;
     padding: 0px 17px;
-    margin: 0px 0px 40px 48%;
+    /* margin: 0px 0px 40px 48%; */
     background: url(../img/input.png) 2% 50% no-repeat;
 }
 .summary input:hover{
@@ -289,7 +295,7 @@ nav{
     background-size: cover;
 }
 .ican h2{
-    margin: 30px 42.5% 0 48%;
+    /* margin: 30px 42.5% 0 48%; */
     color: #263244;
     font-size: 22px;
     font-weight: bold;
@@ -297,12 +303,12 @@ nav{
 }
 .ican h2::after{
     content: '';
-    display: block;
+    display: flex;
     background: #d17700;
     width: 70px;
     height: 4px;
-    margin: 15px 40px;
-    
+    margin: 15px 50px;
+    justify-content: center;
 }
 .ican h4{
     color: #cf7600;
@@ -315,10 +321,10 @@ nav{
     text-align: center;
     line-height: 17px;
     float: left;
-    margin: 150px 45px 100px ;
+    /* margin: 150px 45px 100px ; */
 }
 .firstWrap{
-    margin: 150px 45px 100px 260px;
+    /* margin: 150px 45px 100px 260px; */
 }
 .cases{
     width: 100%;
