@@ -253,12 +253,24 @@ nav{
 }
 .aboutme h2::after{
     content: '';
-    display: flex;
+    display: block;
     background: #d17700;
     width: 70px;
     height: 4px;
+    margin: 20px 0px ;
+    position: relative;
+    left: 68px;
 }
-
+@media (min-width: 992px) and (max-width: 1199px){
+    .aboutme h2::after{
+        left: 78px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .aboutme h2::after{
+        left: 28px;
+    }
+}
 .MyPhoto{
     /* margin: 40px 0px 20px 46%; */
 }
@@ -303,12 +315,13 @@ nav{
 }
 .ican h2::after{
     content: '';
-    display: flex;
+    display: block;
     background: #d17700;
     width: 70px;
     height: 4px;
-    margin: 15px 50px;
-    justify-content: center;
+    position: relative;
+    left: 71px;
+    margin-top: 20px;
 }
 .ican h4{
     color: #cf7600;
@@ -331,7 +344,7 @@ nav{
     height: 1100px;
 }
 .cases h2{
-    margin: 30px 44.5% 0 50.3%;
+    /* margin: 30px 44.5% 0 50.3%; */
     color: #263244;
     font-size: 22px;
     font-weight: bold;
@@ -349,17 +362,17 @@ nav{
     text-align: center;
     margin: 40px auto;
 }
-.cases img{
-    margin: 0 0 25px 229px;
-}
+/* .cases img{
+    margin: 0 0 25px 229px; 
+}*/
 .company{
-    margin-left: 229px;
+    /* margin-left: 229px; */
     width: 290px;
     float: left;
 }
 .project{
     float: left;
-    width: 860px;
+    /* width: 860px; */
     line-height: 20px;
 }
 .cases h3{
