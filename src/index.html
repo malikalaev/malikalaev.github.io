@@ -62,7 +62,7 @@
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-lg-6 mt-5 pt-5">
-                        <div class="title_container mt-5">
+                        <div class="title_container mb-3 mt-5">
                             <h1>Привет<br>Я Андрей Браун</h1>
                             <h4>Фулл стек веб-разработчик </h4>
                             <input type="button" value="Обо мне">
@@ -78,7 +78,7 @@
                     <h2 class=" col-sm-3 col-md-3 col-xl-2">ОБО МНЕ</h2>
                 </div>
                 <div class="row h-100">
-                    <div class="MyPhoto text-center">
+                    <div class="MyPhoto text-center mb-3">
                         <img src="img/myphoto.png" alt="">
                     </div>
                     <div class="text_aboutme text-center">
@@ -170,40 +170,42 @@
         </section>
         <section class="calculator">
             <div class="container">
-                <div class="row col-10 justify-content-center">
-                    <div class="calculator_shadow row  col-9">
-                        <div class="row ">
-                            <h2 class="calculator_h2 text-center justify-content-center">Расчет стоимости</h2>
-                        </div>
-                        <div class="conditions">
-                            <h2>ТИП САЙТА</h2>
-                            <select name="list1" id="list" class="col-12">
-                                <option value="conditions1.1">условие 1</option>
-                                <option value="conditions2.1">условие 2</option>
-                            </select>
-                            <h2>ДИЗАЙН</h2>
-                            <select name="list2" id="list" class="col-12">
-                                <option value="conditions1.2">условие 1</option>
-                                <option value="conditions2.3">условие 2</option>
-                            </select>
-                            <h2>АДАПТИВНОСТЬ</h2>
-                            <select name="list3" id="list" class="col-12">
-                                <option value="conditions1.4">условие 1</option>
-                                <option value="conditions2.5">условие 2</option>
-                            </select>
-                        </div>
-                        <div class="row conclusion g-2">
-                            <div class="conclusion_text1 col-10 col-md-11">
-                                <p>Сроки</p>
-                                <p>Стоимость</p>
+                <div class="row justify-content-center">
+                    <div class="row col-10 justify-content-center ml-5 gx-5">
+                        <div class="calculator_shadow row ml-5 gx-5 col-9">
+                            <div class="row ">
+                                <h2 class="calculator_h2 text-center justify-content-center">Расчет стоимости</h2>
                             </div>
-                            <div class="conclusion_text2 d-flex flex-column align-items-end col">
-                                <p>0</p>
-                                <p>0</p>
+                            <div class="conditions">
+                                <h2>ТИП САЙТА</h2>
+                                <select name="list1" id="list" class="col-12">
+                                    <option value="conditions1.1">условие 1</option>
+                                    <option value="conditions2.1">условие 2</option>
+                                </select>
+                                <h2>ДИЗАЙН</h2>
+                                <select name="list2" id="list" class="col-12">
+                                    <option value="conditions1.2">условие 1</option>
+                                    <option value="conditions2.3">условие 2</option>
+                                </select>
+                                <h2>АДАПТИВНОСТЬ</h2>
+                                <select name="list3" id="list" class="col-12">
+                                    <option value="conditions1.4">условие 1</option>
+                                    <option value="conditions2.5">условие 2</option>
+                                </select>
                             </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <input type="submit" class="button2" value="Оставить заявку">
+                            <div class="row conclusion g-2">
+                                <div class="conclusion_text1 col-10 col-md-11">
+                                    <p>Сроки</p>
+                                    <p>Стоимость</p>
+                                </div>
+                                <div class="conclusion_text2 d-flex flex-column align-items-end col">
+                                    <p>0</p>
+                                    <p>0</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <input type="submit" class="button2" value="Оставить заявку">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -265,35 +267,40 @@
                 <div class="row text-center justify-content-center">
                     <h2 class="col-xl-2 col-md-4">МОИ КОНТАКТЫ</h2>
                 </div>
-                <p class="contact_text pb-5">Lorem ipsum dolor sit, amet olor sit amet consectetur, adipisicing consectetur
+                <p class="contact_text pb-5">Lorem ipsum dolor sit, amet olor sit amet consectetur, adipisicing
+                    consectetur
                 </p>
-                <div class="row">
-                    <div class="row  pb-5 justify-content-evenly  d-xs-grid gap-3 row-cols-6 d-flex align-items-center">
-                        <div class="geoloc contact col-1">
-                            <img src="img/geo.png" alt="">
-                            <p>Санкт-Петербург Невский проспект 11</p>
+                <div class="row justify-content-center">
+                    <div class=" col-9">
+                        <div
+                            class="row  pb-5 justify-content-evenly  d-xs-grid gap-3 row-cols-6 d-flex align-items-center">
+                            <div class="geoloc contact col-1">
+                                <img src="img/geo.png" alt="">
+                                <p>Санкт-Петербург Невский проспект 11</p>
+                            </div>
+                            <div class="mail contact col-1">
+                                <img src="img/mail.png" alt="">
+                                <p>info@companyname.com</p>
+                            </div>
+                            <div class="tel contact col-1">
+                                <img src="img/tel.png" alt="">
+                                <p>+7 999 999 99 99</p>
+                            </div>
                         </div>
-                        <div class="mail contact col-1">
-                            <img src="img/mail.png" alt="">
-                            <p>info@companyname.com</p>
+                        <div class="row mt-5 text-center justify-content-center ">
+                            <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ </h3>
                         </div>
-                        <div class="tel contact col-1">
-                            <img src="img/tel.png" alt="">
-                            <p>+7 999 999 99 99</p>
+                        <div class="sms">
+                            <div class="row  justify-content-center">
+                                <input type="text" placeholder=" Имя" class="name focus col-4 mb-2 ">
+                                <input type="email" placeholder=" Email" class="email focus  col-4">
+                                <textarea class="message focus col-8" id="" cols="30" rows="10"
+                                    placeholder=" Сообщение"></textarea>
+                            </div>
+                            <div class="row  justify-content-center">
+                                <input class="button" type="submit" value="Отправить">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-5 text-center justify-content-center ">
-                        <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ </h3>
-                    </div>
-                    <div class="sms">
-                    <div class="row  justify-content-center">
-                        <input type="text" placeholder=" Имя" class="name focus col-5 mb-2 ">
-                        <input type="email" placeholder=" Email" class="email focus col-4">
-                        <textarea class="message focus col-9" id="" cols="30" rows="10" placeholder=" Сообщение"></textarea>
-                    </div>
-                    <div class="row  justify-content-center">
-                        <input class="button" type="submit" value="Отправить">
-                    </div>
                     </div>
                 </div>
             </div>
@@ -308,13 +315,13 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>
         window.onload = function () {
-          document.body.classList.add('loaded_hiding');
-          window.setTimeout(function () {
-            document.body.classList.add('loaded');
-            document.body.classList.remove('loaded_hiding');
-          }, 500);
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
         }
-      </script>
+    </script>
     <!-- <script>
         window.onload = function () {
             document.body.classList.add('loaded');
