@@ -178,19 +178,24 @@
                             </div>
                             <div class="conditions">
                                 <h2>ТИП САЙТА</h2>
-                                <select name="list1" id="list" class="col-12">
-                                    <option value="conditions1.1">условие 1</option>
-                                    <option value="conditions2.1">условие 2</option>
+                                <select name="list1" id="siteType" class="col-12">
+                                    <option value="conditions1.1">какой-нибудь, чтобы работал</option>
+                                    <option value="conditions1.2">сайт-визитка</option>
+                                    <option value="conditions1.3">интернет-магазин</option>
+                                    <option value="conditions1.4">блог</option>
                                 </select>
                                 <h2>ДИЗАЙН</h2>
-                                <select name="list2" id="list" class="col-12">
-                                    <option value="conditions1.2">условие 1</option>
-                                    <option value="conditions2.3">условие 2</option>
+                                <select name="list2" id="design" class="col-12">
+                                    <option value="conditions2.1">какой-нибудь, чтобы работал</option>
+                                    <option value="conditions2.2">простенький и чтоб глаза не болели </option>
+                                    <option value="conditions2.3">прекрасный: уходить жалко </option>
                                 </select>
                                 <h2>АДАПТИВНОСТЬ</h2>
-                                <select name="list3" id="list" class="col-12">
-                                    <option value="conditions1.4">условие 1</option>
-                                    <option value="conditions2.5">условие 2</option>
+                                <select name="list3" id="adaptive" class="col-12">
+                                    <option value="conditions3.1">какой-нибудь, чтобы работал</option>
+                                    <option value="conditions3.2">только на пк</option>
+                                    <option value="conditions3.3">только на телефоне</option>
+                                    <option value="conditions3.4">везде откроется, даже на тапке</option>    
                                 </select>
                             </div>
                             <div class="row conclusion g-2">
@@ -199,8 +204,8 @@
                                     <p>Стоимость</p>
                                 </div>
                                 <div class="conclusion_text2 d-flex flex-column align-items-end col">
-                                    <p>0</p>
-                                    <p>0</p>
+                                    <div id="terms">0</div>
+                                    <div id="price">0</div>
                                 </div>
                             </div>
                             <div class="row justify-content-center">
@@ -313,6 +318,7 @@
         <h5>Copyright © 2021 Андрей Браун. Design by Web</h5>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/myScript.js"></script>
     <script>
         window.onload = function () {
             document.body.classList.add('loaded_hiding');
@@ -322,11 +328,6 @@
             }, 500);
         }
     </script>
-    <!-- <script>
-        window.onload = function () {
-            document.body.classList.add('loaded');
-        }
-    </script> -->
 </body>
 
 </html>
