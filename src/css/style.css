@@ -79,6 +79,9 @@ nav{
     position: fixed;
     z-index: 99; 
 }
+.active{
+    color: #ff9100 !important;
+}
 .white-btn:visited{
     color: #fff;
 }
@@ -432,7 +435,7 @@ nav{
     font-size: 16px;
     color: #323e4f;
 }
-.log b{
+.number, .number1, .number2, .number3{
     font-size: 19px;
     font-weight: 900;
     display: block;
@@ -652,4 +655,14 @@ footer h5{
         position: relative;
         left: 135px;
     }
+}
+img{ 
+    opacity: 1; 
+    transition: opacity 0.3s; 
+} 
+img[data-src] {
+     opacity: 0; 
+}
+.fotorama{
+    background-color: #263244 !important;
 }
