@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="fotorama-4.6.4.dev/fotorama.dev.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -189,23 +191,23 @@
                             <div class="conditions">
                                 <h2>ТИП САЙТА</h2>
                                 <select name="list1" id="siteType" class="col-12">
-                                    <option value="conditions1.1">какой-нибудь, чтобы работал</option>
-                                    <option value="conditions1.2">сайт-визитка</option>
-                                    <option value="conditions1.3">интернет-магазин</option>
-                                    <option value="conditions1.4">блог</option>
+                                    <option value="1000">какой-нибудь, чтобы работал</option>
+                                    <option value="2000">сайт-визитка</option>
+                                    <option value="3000">интернет-магазин</option>
+                                    <option value="4000">блог</option>
                                 </select>
                                 <h2>ДИЗАЙН</h2>
                                 <select name="list2" id="design" class="col-12">
-                                    <option value="conditions2.1">какой-нибудь, чтобы работал</option>
-                                    <option value="conditions2.2">простенький и чтоб глаза не болели </option>
-                                    <option value="conditions2.3">прекрасный: уходить жалко </option>
+                                    <option value="500">какой-нибудь, чтобы работал</option>
+                                    <option value="700">простенький и чтоб глаза не болели </option>
+                                    <option value="1000">прекрасный: уходить жалко </option>
                                 </select>
                                 <h2>АДАПТИВНОСТЬ</h2>
                                 <select name="list3" id="adaptive" class="col-12">
-                                    <option value="conditions3.1">какой-нибудь, чтобы работал</option>
-                                    <option value="conditions3.2">только на пк</option>
-                                    <option value="conditions3.3">только на телефоне</option>
-                                    <option value="conditions3.4">везде откроется, даже на тапке</option>
+                                    <option value="800">какой-нибудь, чтобы работал</option>
+                                    <option value="900">только на пк</option>
+                                    <option value="1100">только на телефоне</option>
+                                    <option value="3000">везде откроется, даже на тапке</option>
                                 </select>
                             </div>
                             <div class="row conclusion g-2">
@@ -220,6 +222,33 @@
                             </div>
                             <div class="row justify-content-center">
                                 <input type="submit" class="button2" value="Оставить заявку">
+                            </div>
+                            <div class="modal_window row w-auto h-auto mx-auto">
+                                <button type="button" class="btn btn-danger  " id="modalOpen" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Получить скидку 
+                                  </button>
+                                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog  modal-dialog-centered">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="staticBackdropLabel">Лучшие цены и сроки</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <h3> Не пропусти </h3>
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                              Eos corrupti et animi mollitia fuga nobis voluptates cumque quas 
+                                              ullam voluptas similique accusantium tempore sed harum,
+                                               hic vel sapiente odio nesciunt ducimus deserunt aperiam inventore fugiat cum? 
+                                              Quisquam modi possimus sunt officia hic fuga voluptas debitis consequuntur nulla. Sed, earum quisquam?</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                          <button type="button" class="btn btn-primary">Понял</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>       
                             </div>
                         </div>
                     </div>
@@ -263,20 +292,43 @@
                     </div>
                     <div class="row text-center justify-content-center align-items-center">
                         <div class="mihail col-7">
-                            <img data-src="img/mihail.png" src="img/mihail-off.png" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit asperiores minima nemo
-                                delectus
-                                dolorem
-                                maiores sint ab, tempore ipsa, consectetur vitae deleniti labore, doloremque
-                                reprehenderit.
-                            </p>
-                            <p><b>Михаил</b>, Ген директор ПАО "Газпром"</p>
-                            <div class="radio">
-                                <input type="radio" name="input_text">
-                                <input type="radio" name="input_text">
-                                <input type="radio" name="input_text">
+                            <div class="review_slider">
+                                <div class="review_slider1">
+                                    <img   class="review_mans mx-auto" data-src="img/mihail.png" src="img/mihail-off.png" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit asperiores minima nemo
+                                        delectus
+                                        dolorem
+                                        maiores sint ab, tempore ipsa, consectetur vitae deleniti labore, doloremque
+                                        reprehenderit.
+                                    </p>
+                                    <p><b>Михаил</b>, Ген директор ПАО "Газпром"</p>
+                                </div>
+                                <div class="review_slider2">
+                                    <img  class="review_mans mx-auto" data-src="img/taras.png" src="img/taras-off.jpg" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit asperiores minima nemo
+                                        delectus
+                                        dolorem
+                                        maiores sint ab, tempore ipsa, consectetur vitae deleniti labore, doloremque
+                                        reprehenderit.
+                                    </p>
+                                    <p><b>lorem</b>, Lorem ipsum dolor sit amet.</p>
+                                </div>
+                                <div class="review_slider3">
+                                    <img   class="review_mans mx-auto" data-src="img/noname.png" src="img/noname-off.jpg" alt="">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit asperiores minima nemo
+                                        delectus
+                                        dolorem
+                                        maiores sint ab, tempore ipsa, consectetur vitae deleniti labore, doloremque
+                                        reprehenderit.
+                                    </p>
+                                    <p><b>lorem</b>, Lorem ipsum dolor sit amet.</p>
+                                </div>
                             </div>
-                        </div>
+                            <!-- <div class="radio">
+                                 <input type="radio" name="input_text">
+                                <input type="radio" name="input_text">
+                                <input type="radio" name="input_text">
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -344,6 +396,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="fotorama-4.6.4.dev/fotorama.dev.js"></script>
     <script src="js/myScript.js"></script>
 </body>
