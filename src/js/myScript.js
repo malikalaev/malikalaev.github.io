@@ -97,47 +97,76 @@ $(document).ready(function () {
 	// setTimeout(function() {
 	// 	$('#modalOpen').click();
 	// },15000);
-
+// калькулятор 
 let siteType = $('#siteType').val(),
    design =  $('#design').val(),
-   adaptive =  $('#adaptive').val();
+   adaptive =  $('#adaptive').val(); 
 
-let choice = siteType + design + adaptive;
+	$('#siteType').on("change", function(){
+		siteType = $(this).val();
+	});
+	$('#design').on("change", function(){
+		design = $(this).val();
+	});
+	
+	$('#adaptive').on("change", function(){
+		adaptive = $(this).val();
+	});
+
+	
+	let siteTypeNum = parseInt(siteType,10),
+		 designNum = parseInt(design,10),
+		 adaptiveNum = parseInt(adaptive,10);
+	console.log(siteTypeNum);
+	console.log(designNum);
+	console.log(adaptiveNum);
+
+	$('#buttonApplications').click(function(){ 
+		let choice = siteTypeNum + designNum + adaptiveNum;
+		$('#price').text(choice);
+	console.log(siteTypeNum);
+	console.log(designNum);
+	console.log(adaptiveNum);
+	
+	});
+	
+
+
+
 // $('#price') = text(choice);
-console.log(choice);
-function getCount (choice) {
+// function getCount (choice) {
 
-if (choice == 111) {
-   alert("Цена:11000 Сроки: 3 дня");
-} 
-else if (choice == 121) {
-   alert("Цена:12000 Сроки: 7 дней");
-}
-else if (choice == 112) {
-   alert("Цена:11000 Сроки: 9 дней");
-} 
-else if (choice == 122) {
-   alert("Цена:11000 Сроки: 12 дней");
-}
-else if (choice == 211) {
-   alert("Цена:11000 Сроки: 13 дней");
-}
-else if (choice == 221) {
-   alert("Цена:11000 Сроки: 15 дней");
-} 
-else if (choice == 212) {
-   alert("Цена:11000 Сроки: 20 дней");
-}
-else if (choice == 222) {
-   alert("Цена:11000 Сроки: 30 дней");
-}   
-else {
-   alert("вы ввели что-то не то");
-}
-}
-let result = choice;
+// if (choice == 111) {
+//    alert("Цена:11000 Сроки: 3 дня");
+// } 
+// else if (choice == 121) {
+//    alert("Цена:12000 Сроки: 7 дней");
+// }
+// else if (choice == 112) {
+//    alert("Цена:11000 Сроки: 9 дней");
+// } 
+// else if (choice == 122) {
+//    alert("Цена:11000 Сроки: 12 дней");
+// }
+// else if (choice == 211) {
+//    alert("Цена:11000 Сроки: 13 дней");
+// }
+// else if (choice == 221) {
+//    alert("Цена:11000 Сроки: 15 дней");
+// } 
+// else if (choice == 212) {
+//    alert("Цена:11000 Сроки: 20 дней");
+// }
+// else if (choice == 222) {
+//    alert("Цена:11000 Сроки: 30 дней");
+// }   
+// else {
+//    alert("вы ввели что-то не то");
+// }
+// }
+// let result = choice;
 
-getCount(result);
+// getCount(result);
 
 
 
