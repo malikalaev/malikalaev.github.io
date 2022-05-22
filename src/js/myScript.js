@@ -135,22 +135,7 @@ $(document).ready(function () {
 
 		getCount(result);
 	});
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	new WOW().init();
 });
 
 
