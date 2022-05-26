@@ -28,10 +28,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-2 col-lg-3 col-7">
-                        <div class="logo wow">Андрей Браун</div>
+                        <div class="logo ">Малик Алаев</div>
                     </div>
                     <div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
-                        <div class="menu wow">
+                        <div class="menu ">
                             <ul class="list">
                                 <li><a class="active" href="#aboutme">ОБО МНЕ</a></li>
                                 <li><a href="#ican">УСЛУГИ</a></li>
@@ -67,7 +67,7 @@
             <div class="container h-100">
                 <div class="row align-items-center h-100">
                     <div class="col-lg-6 mt-5 pt-5">
-                        <div class="title_container wow mb-3 mt-5">
+                        <div class="title_container  mb-3 mt-5">
                             <h1>Привет,<br>Я Малик Алаев</h1>
                             <h4>Фулл стек веб-разработчик </h4>
                             <a href="#aboutme"><input type="button" value="Обо мне"></a>
@@ -178,7 +178,7 @@
                             <div class="conditions">
                                 <h2>ТИП САЙТА</h2>
                                 <select name="list1" id="siteType" class="col-12">
-                                    <option value="">выберите значение </option>
+                                    <option value="0">выберите значение </option>
                                     <option value="999">какой-нибудь, чтобы работал</option>
                                     <option value="2999">сайт-визитка</option>
                                     <option value="3999">интернет-магазин</option>
@@ -186,14 +186,14 @@
                                 </select>
                                 <h2>ДИЗАЙН</h2>
                                 <select name="list2" id="design" class="col-12">
-                                    <option value="">выберите значение </option>
+                                    <option value="0">выберите значение </option>
                                     <option value="599">какой-нибудь, чтобы работал</option>
                                     <option value="799">простенький и чтоб глаза не болели </option>
                                     <option value="1999">прекрасный: уходить жалко </option>
                                 </select>
                                 <h2>АДАПТИВНОСТЬ</h2>
                                 <select name="list3" id="adaptive" class="col-12">
-                                    <option value="">выберите значение </option>
+                                    <option value="0">выберите значение </option>
                                     <option value="899">какой-нибудь, чтобы работал</option>
                                     <option value="999">только на пк</option>
                                     <option value="1199">только на телефоне</option>
@@ -201,18 +201,23 @@
                                 </select>
                             </div>
                             <div class="row conclusion g-2">
-                                <div class="conclusion_text1 col-10 col-md-11">
+                                <div class="conclusion_text1 col-10 col-md-9">
                                     <p>Сроки</p>
                                     <p>Стоимость</p>
                                 </div>
-                                <div class="conclusion_text2 d-flex flex-column align-items-end col">
+                                <div class="conclusion_text2  prince d-flex flex-column align-items-end col">
                                     <div id="terms">0</div>
                                     <div id="price">0</div>
                                 </div>
                             </div>
-                            <div class="row justify-content-center">
-                                <input type="submit" class="button2" id="buttonApplications" value="Оставить заявку">
+                            <div class="row mx-auto w-auto h-auto">
+                                <input type="submit" class="button2" id="buttonApplications" value="Получить результат">
                             </div>
+                            <a href="#MyContacts" class="w-auto h-auto mx-auto  btnA">
+                                <div class="row w-auto h-auto mx-auto">
+                                    <input type="submit" class="button2" value="Оставить заявку">
+                                </div>
+                            </a>
                             <div class="modal_window row w-auto h-auto mx-auto">
                                 <button type="button" class="btn btn-danger  " id="modalOpen" data-bs-toggle="modal"
                                     data-bs-target="#staticBackdrop">
@@ -333,11 +338,15 @@
                             </div>
                             <div class="mail contact col-1">
                                 <img src="img/mail.png" alt="">
-                                <p>info@companyname.com</p>
+                                <a href=" mailto:info@companyname.com">
+                                    <p>info@companyname.com</p>
+                                </a>
                             </div>
                             <div class="tel contact col-1">
                                 <img src="img/tel.png" alt="">
-                                <p>+7 999 999 99 99</p>
+                                <a href="tel:+79999999999">
+                                    <p>+7 999 999 99 99</p>
+                                </a>
                             </div>
                         </div>
                         <div class="row mt-5 text-center justify-content-center ">
@@ -359,7 +368,6 @@
             </div>
         </section>
         <section class="map col-12">
-            <!-- <img class="image-link" href="img/map.png" src="img/map.png" alt=""> -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31028.267077368317!2d-71
             .20099396762329!3d42.36639704894015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3652d0d3d311b%3A0x787cbf24
