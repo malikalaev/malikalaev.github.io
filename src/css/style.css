@@ -11,10 +11,82 @@ body {
    background: url(../img/bg.jfif) center/cover fixed no-repeat;
 }
 
+.preloader {
+   position: fixed;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   background: #fff;
+   z-index: 1001;
+}
+
+.preloader__row {
+   position: relative;
+   top: 50%;
+   left: 50%;
+   width: 70px;
+   height: 70px;
+   margin-top: -35px;
+   margin-left: -35px;
+   text-align: center;
+   -webkit-animation: preloader-rotate 2s infinite linear;
+   -o-animation: preloader-rotate 2s infinite linear;
+   animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+   position: absolute;
+   display: inline-block;
+   top: 0;
+   background-color: rgb(23, 234, 1);
+   border-radius: 100%;
+   width: 35px;
+   height: 35px;
+   -webkit-animation: preloader-bounce 2s infinite ease-in-out;
+   -o-animation: preloader-bounce 2s infinite ease-in-out;
+   animation: preloader-bounce 2s infinite ease-in-out;
+
+}
+
+.preloader__item:last-child {
+   top: auto;
+   bottom: 0;
+   animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes preloader-bounce {
+
+   0%,
+   100% {
+      transform: scale(0);
+   }
+
+   50% {
+      transform: scale(1);
+   }
+}
+
+.loaded_hiding .preloader {
+   transition: 0.3s opacity;
+   opacity: 0;
+}
+
+.loaded .preloader {
+   display: none;
+}
+
+
 nav {
    width: 100%;
    height: 50px;
-   background: rgba(2, 217, 255, 0.26);
+   background: rgba(2, 217, 255, 0.46);
    position: fixed;
    z-index: 99;
    box-shadow: 0 10px 5px;
@@ -75,10 +147,10 @@ nav {
 }
 
 .title_container input {
-   background: rgb(23, 95, 123);
+   background: rgb(16, 187, 255);
    color: #fff;
-   border: 3px solid rgb(23, 95, 123);
-   border-radius: 3%;
+   border: 3px solid rgb(16, 187, 255);
+   border-radius: 9.5%;
    width: 140px;
    height: 30px;
    margin-top: 15px;
@@ -88,6 +160,7 @@ nav {
    text-align: center;
    color: #fff;
    width: 100%;
+   height: 100%;
 }
 
 .main h1 {
@@ -96,4 +169,25 @@ nav {
 
 .title_container {
    margin: 240px 40px;
+}
+
+.about-row {
+   background: #fff;
+   width: 100%;
+   height: 100%;
+   border-radius: 10%;
+}
+
+.about-row h2 {
+   color: rgb(7, 177, 7);
+   display: flex;
+   justify-content: center;
+   margin: 50px 40px 40px;
+   padding-top: 40px;
+   font-size: 30px;
+}
+
+.text1 {
+   text-align: center;
+   font-size: 19px;
 }
