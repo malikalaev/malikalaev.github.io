@@ -5,6 +5,7 @@ $(document).ready(function () {
       $('html, body').animate({ scrollTop: $(valHref).offset().top - 60 + "px" });
    });
 
+
    $(window).scroll(() => {
       let scrollDistance = $(window).scrollTop();
       $(".section").each(function (i, el) {
