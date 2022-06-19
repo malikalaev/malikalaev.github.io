@@ -356,6 +356,15 @@ footer h5 {
 
 }
 
+.tel2 {
+   margin-left: 28px;
+}
+
+.text-src {
+   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+   font-weight: bolder;
+}
+
 @media (max-width: 1200px) {
    .about-row {
       border-radius: 0;
